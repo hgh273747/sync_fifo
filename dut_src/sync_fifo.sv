@@ -87,7 +87,7 @@ begin
 end
 
 assign fifo_empty_l = (cnt_l == 0)? 1'b1 : 1'b0; 
-assign fifo_full_l = (cnt_l == APT_SIZE-1 || rstn_i == 1'b0 )? 1'b1 : 1'b0;
+assign fifo_full_l = (cnt_l == APT_SIZE || rstn_i == 1'b0 )? 1'b1 : 1'b0;
 assign fifo_empty_o = fifo_empty_l;
 assign fifo_full_o = fifo_full_l;
 
